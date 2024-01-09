@@ -44,6 +44,9 @@ function writeToFile(fileName, data) {
     (err) => err ? console.error(err) : console.log(`${fileName}.md has been generated.`))
 }
 // TODO: Create a function to initialize app
-
+async function init() {
+    let answers = await userInput();
+    writeToFile((answers.fileName),(generateMarkdown(answers)));
+}
 // Function call to initialize app
 
