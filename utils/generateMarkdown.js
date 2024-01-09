@@ -134,6 +134,109 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+function renderLicenseSection(license) {
+    if (license===licenseArr[0]){
+      return `Read more about ${licenseArr[0]} here:`
+    } else if (license===licenseArr[1]){
+      return `Read more about ${licenseArr[1]} here:`
+    } else if (license===licenseArr[2]){
+      return `Read more about ${licenseArr[2]} here:`
+    } else if (license===licenseArr[3]){
+      return `Read more about ${licenseArr[3]} here:`
+    } else if (license===licenseArr[4]){
+      return `Read more about ${licenseArr[4]} here:`
+    } else if (license===licenseArr[5]){
+      return `Read more about ${licenseArr[5]} here:`
+    } else if (license===licenseArr[6]){
+      return `Read more about ${licenseArr[6]} here:`
+    } else if (license===licenseArr[7]){
+      return `Read more about ${licenseArr[7]} here:`
+    } else if (license===licenseArr[8]){
+      return `Read more about ${licenseArr[8]} here:`
+    } else if (license===licenseArr[9]){
+      return `Read more about ${licenseArr[9]} here:`
+    } else if (license===licenseArr[10]){
+      return `Read more about ${licenseArr[10]} here:`
+    } else if (license===licenseArr[11]){
+      return `Read more about ${licenseArr[11]} here:`
+    } else if (license===licenseArr[12]){
+      return `Read more about ${licenseArr[12]} here:`
+    } else if (license===licenseArr[13]){
+      return `Read more about ${licenseArr[13]} here:`
+    } else if (license===licenseArr[14]){
+      return `Read more about ${licenseArr[14]} here:`
+    } else if (license===licenseArr[15]){
+      return `Read more about ${licenseArr[15]} here:`
+    } else if (license===licenseArr[16]){
+      return `Read more about ${licenseArr[16]} here:`
+    } else if (license===licenseArr[17]){
+      return `Read more about ${licenseArr[17]} here:`
+    } else if (license===licenseArr[18]){
+      return `Read more about ${licenseArr[18]} here:`
+    } else if (license===licenseArr[19]){
+      return `Read more about ${licenseArr[19]} here:`
+    } else if (license===licenseArr[20]){
+      return `Read more about ${licenseArr[20]} here:`
+    } else if (license===licenseArr[21]){
+      return `Read more about ${licenseArr[21]} here:`
+    } else if (license===licenseArr[22]){
+      return `Read more about ${licenseArr[22]} here:`
+    } else if (license===licenseArr[23]){
+      return `Read more about ${licenseArr[23]} here:`
+    } else if (license===licenseArr[24]){
+      return `Read more about ${licenseArr[24]} here:`
+    } else if (license===licenseArr[25]){
+      return `Read more about ${licenseArr[25]} here:`
+    } else if (license===licenseArr[26]){
+      return `Read more about ${licenseArr[26]} here:`
+    } else if (license===licenseArr[27]){
+      return `Read more about ${licenseArr[27]} here:`
+    } else if (license===licenseArr[28]){
+      return `Read more about ${licenseArr[28]} here:`
+    } else {
+      return ""
+    }
+  }
 
 // TODO: Create a function to generate markdown for README
-
+function generateMarkdown(data) {
+    return `# ${data.title}
+    ## Badges
+    ${renderLicenseBadge(data.license)}
+  
+    ## Table of Contents
+    * [License](#license)
+    * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [How to Contribute](#how-to-contribute)
+    * [Tests](#tests)
+    * [Questions?](#questions)
+  
+    ## License
+    ${renderLicenseSection(data.license)}
+    ${renderLicenseLink(data.license)}
+  
+    ## Description
+    ${data.description}
+  
+    ## Installation
+    ${data.install}
+  
+    ## Usage
+    ${data.usage}
+  
+    ## How to Contribute
+    [Contributor Covenant](https://www.contributor-covenant.org/)  
+    ${data.contributing}
+  
+    ## Tests
+    ${data.testing}
+  
+    ## Questions?
+    ### Reach me here: 
+    [${data.username}](https://github.com/${data.username})  
+    ${data.email}`;
+  }
+  
+  module.exports = generateMarkdown;
