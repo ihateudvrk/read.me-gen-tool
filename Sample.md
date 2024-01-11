@@ -1,6 +1,6 @@
-# Read Me Gen Tool
+# README Gen
     ## Badges
-    [![License: AFL-3.0](https://img.shields.io/badge/License-AFL--3.0-lightgrey.svg)](https://opensource.org/licenses/AFL-3.0)
+    [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
   
     ## Table of Contents
     * [License](#license)
@@ -12,26 +12,26 @@
     * [Questions?](#questions)
   
     ## License
-    Read more about Academic Free License v3.0 here:
-    [Academic Free License v3.0](https://opensource.org/licenses/AFL-3.0)
+    Read more about Do What The Fuck You Want To Public License here:
+    [Do What The Fuck You Want To Public License](http://www.wtfpl.net/about/)
   
     ## Description
-    etcetcect
+    This application was created to aid the user in creating pesky readmes!
   
     ## Installation
-    etc
+    Simply run node index.js in your terminal and answer the questions!
   
     ## Usage
-    etcetc
+    In the terminal
   
     ## How to Contribute
     [Contributor Covenant](https://www.contributor-covenant.org/)  
-    etcetc
+    NA
   
     ## Tests
-    etcetc
+    NA
   
     ## Questions?
     ### Reach me here: 
-    [etcetc](https://github.com/etcetc)  
-    ettcetc
+    [ihateudvrk](https://github.com/ihateudvrk)  
+    gabebarraza33@gmail.com
